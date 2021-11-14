@@ -5,7 +5,7 @@ export const initializeSwagger = (app: any) => {
     .setTitle('Life Gamification API')
     .setDescription('Life Gamification API')
     .setVersion('1.0')
-    .addTag('gamification')
+    .addTag('Stralom - Life Gamification')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
