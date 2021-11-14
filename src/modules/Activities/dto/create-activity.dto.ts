@@ -1,1 +1,3 @@
-export class CreateActivityDto {}
+export class CreateActivityDto {
+
+}
