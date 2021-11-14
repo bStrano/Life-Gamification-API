@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ActivitiesModule } from './activities/activities.module';
-import { RewardsModule } from './Rewards/rewards.module';
+import { ActivityModule } from './Activity/activity.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import TypeOrmConfig from '../config/database.config';
@@ -12,8 +11,7 @@ import TypeOrmConfig from '../config/database.config';
     }),
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     TypeOrmModule.forRoot(TypeOrmConfig),
-    ActivitiesModule,
-    RewardsModule,
+    ActivityModule,
   ],
   controllers: [],
   providers: [],
